@@ -22,7 +22,7 @@ export default {
         marginTop: '20px',
         color: '#eef0f1',
         fontWeight: 300,
-        fontSize: '1.4em',
+        fontSize: '1.0em',
         whiteSpace:'pre-wrap',
         letterSpacing: '1.5px',
         lineHeight: '1.4em',
