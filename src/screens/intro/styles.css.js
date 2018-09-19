@@ -1,6 +1,6 @@
 export default {
     screen: {
-        backgroundColor: '#3a46a5',
+        backgroundColor: '#005169',
         display: 'flex',
         flex: 1,
         height: '100vh',
