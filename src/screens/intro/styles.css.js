@@ -14,13 +14,13 @@ export default {
     introName: {
         color: '#eef0f1',
         fontWeight: 700,
-        fontSize: '1.8em',
+        fontSize: '1.6em',
         textAlign: 'center',
         marginBottom: '20px',
     },
     introDescription: {
         color: '#eef0f1aa',
-        fontWeight: 500,
+        fontWeight: 400,
         fontSize: '1.2em',
         whiteSpace:'pre-wrap',
         textAlign: 'center',

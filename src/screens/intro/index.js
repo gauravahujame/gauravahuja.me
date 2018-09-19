@@ -23,8 +23,8 @@ class IntroScreen extends React.Component {
         alignItems="center"
         style={styles.screen}>
         <div style={{ display: 'flex', flex: 1, flexDirection: 'column', fontFamily: 'Raleway', margin: '25px', alignItems: 'center', justifyContent: 'center' }}>
-          {/* <img src='https://media.licdn.com/dms/image/C5603AQHu0Vg78I7xpA/profile-displayphoto-shrink_100_100/0?e=1540425600&v=beta&t=4OHTqTNpwF41dqy4O242deIsfH4_ATe1upHqH1_q7h0'
-            style={{ marginBottom: '20px', width: '100px', height: '100px', borderRadius: 200, border: '3px solid white' }} /> */}
+          <img src={require('./gaurav.png')}
+            style={{ marginBottom: '20px', width: '100px', height: '100px', borderRadius: 200, border: '3px solid white' }} />
           <h1 style={styles.introName}>{`Hello, my name is ${this.state.name}.`}</h1>
           <p style={styles.introDescription}>
             {this.state.description}
