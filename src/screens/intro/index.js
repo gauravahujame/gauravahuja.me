@@ -21,7 +21,7 @@ class IntroScreen extends React.Component {
         direction="column"
         justify="center"
         alignItems="center"
-        style={{ display: 'flex', flex: 1, height: '100vh', backgroundColor: '#3a46a5' }}>
+        style={styles.screen}>
         <div style={{ display: 'flex', flex: 1, flexDirection: 'column', fontFamily: 'Raleway', margin: '25px', alignItems: 'center', justifyContent: 'center' }}>
           {/* <img src='https://media.licdn.com/dms/image/C5603AQHu0Vg78I7xpA/profile-displayphoto-shrink_100_100/0?e=1540425600&v=beta&t=4OHTqTNpwF41dqy4O242deIsfH4_ATe1upHqH1_q7h0'
             style={{ marginBottom: '20px', width: '100px', height: '100px', borderRadius: 200, border: '3px solid white' }} /> */}

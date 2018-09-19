@@ -1,6 +1,9 @@
 export default {
-    introScreen: {
+    screen: {
         backgroundColor: '#3a46a5',
+        display: 'flex',
+        flex: 1,
+        height: '100vh',
     },
     heroContent: {
         display: 'flex',
@@ -11,13 +14,13 @@ export default {
     introName: {
         color: '#eef0f1',
         fontWeight: 700,
-        fontSize: '2em',
+        fontSize: '1.8em',
         textAlign: 'center',
-        lineHeight: '2em',
+        marginBottom: '20px',
     },
     introDescription: {
         color: '#eef0f1aa',
-        fontWeight: 400,
+        fontWeight: 500,
         fontSize: '1.2em',
         whiteSpace:'pre-wrap',
         textAlign: 'center',
