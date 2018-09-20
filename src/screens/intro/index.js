@@ -28,7 +28,7 @@ class IntroScreen extends React.Component {
           <p style={styles.introDescription}>
             {this.state.description}
           </p>
-          <div style={{ padding: '40px' }}>
+          <div style={{ padding: '40px', flexDirection: 'row', display: 'flex' }}>
             <SocialIcon type="facebook" link="https://www.facebook.com/gauravahujame" />
             <SocialIcon type="linkedin" link="https://www.linkedin.com/in/gauravahujame" />
             <SocialIcon type="github" link="https://github.com/gauravahujame" />

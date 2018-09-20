@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import posed from 'react-pose';
 
 export default class SocialIcon extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ export default class SocialIcon extends React.Component {
     }
 
     selectIcon() {
-        switch(this.props.type){
+        switch (this.props.type) {
             case 'facebook': return faFacebook;
             case 'linkedin': return faLinkedin;
             case 'github': return faGithub;
@@ -20,16 +21,21 @@ export default class SocialIcon extends React.Component {
     }
 
     render() {
+        const Animated = posed.div({
+            hoverable: true,
+            init: { opacity: 0.5, scale: 1.0 },
+            hover: { opacity: 1.0, scale: 1.1 }
+        });
         return (
-            <a href={this.props.link}>
-                <FontAwesomeIcon
-                    icon={this.selectIcon()}
-                    color="white"
-                    size="2x"
-                    onMouseEnter={() => this.setState({ opacity: 1.0 })}
-                    onMouseLeave={() => this.setState({ opacity: 0.5 })}
-                    style={{ padding: '10px', margin: '10px', opacity: this.state.opacity }} />
-            </a>
+            <Animated>
+                <a href={this.props.link}>
+                    <FontAwesomeIcon
+                        icon={this.selectIcon()}
+                        color="white"
+                        size="2x"
+                        style={{ padding: '10px', margin: '10px' }} />
+                </a>
+            </Animated>
         )
     }
 }
