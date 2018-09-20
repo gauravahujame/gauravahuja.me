@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { SocialIcon } from '../../components';
 
 import styles from './styles.css.js';
 
@@ -30,15 +29,9 @@ class IntroScreen extends React.Component {
             {this.state.description}
           </p>
           <div style={{ padding: '40px' }}>
-            <a href="https://www.facebook.com/gauravahujame">
-              <FontAwesomeIcon icon={faFacebook} color="white" size="2x" style={{ padding: '10px', margin: '10px' }} />
-            </a>
-            <a href="https://www.linkedin.com/in/gauravahujame">
-              <FontAwesomeIcon icon={faLinkedin} color="white" size="2x" style={{ padding: '10px', margin: '10px' }} />
-            </a>
-            <a href="https://github.com/gauravahujame">
-              <FontAwesomeIcon icon={faGithub} color="white" size="2x" style={{ padding: '10px', margin: '10px' }} />
-            </a>
+            <SocialIcon type="facebook" link="https://www.facebook.com/gauravahujame" />
+            <SocialIcon type="linkedin" link="https://www.linkedin.com/in/gauravahujame" />
+            <SocialIcon type="github" link="https://github.com/gauravahujame" />
           </div>
         </div>
       </Grid>
