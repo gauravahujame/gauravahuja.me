@@ -28,7 +28,7 @@ export default class SocialIcon extends React.Component {
         });
         return (
             <Animated>
-                <a href={this.props.link}>
+                <a href={this.props.link} target="_blank">
                     <FontAwesomeIcon
                         icon={this.selectIcon()}
                         color="white"

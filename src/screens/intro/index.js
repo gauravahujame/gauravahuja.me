@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { SocialBar } from '../../components';
+import { SocialBar, NavControl } from '../../components';
 
 import styles from './styles.css.js';
 
@@ -29,7 +29,8 @@ class IntroScreen extends React.Component {
             {this.state.description}
           </p>
         </div>
-        <SocialBar />
+        {/* <SocialBar /> */}
+        <NavControl />
       </Grid>
     );
   }
