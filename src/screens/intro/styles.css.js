@@ -1,6 +1,6 @@
 export default {
     screen: {
-        backgroundColor: '#005169',
+        backgroundColor: '#191919',
         display: 'flex',
         flex: 1,
         height: '100vh',
@@ -22,10 +22,19 @@ export default {
     introDescription: {
         color: '#eef0f1aa',
         fontWeight: 400,
-        fontSize: '1.2em',
+        letterSpacing: '1px',
+        fontSize: '1.0em',
         whiteSpace:'pre-wrap',
         textAlign: 'center',
         lineHeight: '1.5em',
         fontFamily: 'Raleway',
     },
+    link: {
+        color: '#ffffff',
+        lineHeight: '2.0em',
+        cursor: 'pointer',
+        textDecoration: 'underline',
+        textDecorationStyle: 'dashed',
+        textUnderlinePosition: 'under'
+    }
 }
