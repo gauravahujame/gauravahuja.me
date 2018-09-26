@@ -20,8 +20,8 @@ export default {
         marginBottom: '20px',
     },
     introDescription: {
-        color: '#eef0f1aa',
-        fontWeight: 400,
+        color: '#eef0f1',
+        fontWeight: 200,
         letterSpacing: '1px',
         fontSize: '1.0em',
         whiteSpace:'pre-wrap',
