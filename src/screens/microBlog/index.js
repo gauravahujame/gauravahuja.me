@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import BlogPost from './components/blogPost';
 import styles from './styles.css.js';
+import NextButton from './components/nextButton.js';
 
 class MicroBlogScreen extends React.Component {
   constructor(props) {
@@ -31,7 +32,10 @@ class MicroBlogScreen extends React.Component {
         direction="row"
         justify="center"
         style={styles.screen}>
-          {this.state.blogEntries.map(blog => <BlogPost blog={blog} />)}
+          <div style={{ display: 'flex', flex: 1, flexDirection: 'row', justifyContent: 'center', paddingRight: '100px', paddingLeft: '100px' }}>
+            {this.state.blogEntries.map(blog => <BlogPost blog={blog} />)}
+          </div>
+          <NextButton />
       </Grid>
     );
   }
