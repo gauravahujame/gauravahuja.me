@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div style={{ flex: 1}}>
         <IntroScreen />
-        <BlogScreen />
+        {/* <BlogScreen /> */}
         <MicroBlogScreen />
         {/* <WorkScreen /> */}
       </div>

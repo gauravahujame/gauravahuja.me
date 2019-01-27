@@ -9,15 +9,17 @@ class MicroBlogScreen extends React.Component {
     this.state = {
         blogEntries: [
             {
-                title: 'The Martian',
+                title: 'Deploying serverless on the AWS ecosystem',
                 date: 'August 2, 2017',
-                text: 'Consisting of five crosses, four smaller crosses around a larger central cross, the Jerusalem Cross is a heraldry symbol for the Kingdom of Jerusalem and arose around the 11th century. Appearing as gold crosses atop of a silver shield, the Jerusalem Cross was not only displayed on the shields of Christian crusaders (sometimes red crosses), but it was also displayed on the arms of the King of Jerusalem and was flown as the cities flag. When Christ was crucified the Gospels claim Jesus endured five wounds, these famous “Five Wounds of Christ” are the basis for the symbolic meaning of the five crosses. Credited with the creation of the Jerusalem Cross, ',
+                text: 'In this tutorial, I will walk you through the process of creating a serverless project and configuring it to be deployed on AWS. Tech stack glossary: AWS cloudformation, AWS lambda, Serveless Framework...',
+                image: 'http://msoliman.me/wp-content/uploads/2018/02/aws.png',
             },
             {
-                title: 'Becoming Steve Jobs',
+                title: 'Observations about react lifecycle',
                 date: 'September 3, 2017',
-                text: 'Chnoubis is a hybrid creature that is composed of the head of a lion, body of a serpent, and usually has seven rays emanating from around his head. Chnoubis is often associated with the Egyptian Gnostic Archon and demiurge, Yaldabaoth, and is believed to be related to the deity Abraxas. Chnoubis was mostly found on small coins, inscribed on gnostic gems, talismans made from precious stones, and was used as a medical amulet to protect from disease and infection; the earliest inscribings of Chnoubis date to around the first century. The lion head of Chnoubis is symbolic of enlightenment and represents his solar forces, the serpent body symbolizes the lower impulses and earthly desires, the seven rays around the head are symbolic of the seven visible planets, the seven days of the week, the seven visible colors, and the seven Greek vowels. Despite originally being seen as a protecting figure and defender against demonic energies, Chnoubis is now often associated with satanic and demonic forces due to misconceptions related to his serpentine body.',
-            },
+                text: 'The react lifecycle was originally designed to be flexible enough to accomodate a lot of use cases. But with this freedom comes the responsibility of using these lifecycle hooks wisely. I often find myself in the situtation where it seems obvious to use the lifecycle methods to maybe fix a re-render issue, or to add an animation that your cllient wants on an unusual event. I suggest, think twice code once. I hate to use the lifecycle methods a they provide a place for ugly code to be written :D. I have often found that rethinking your component breakdown structure, can help avoid an shouldComponentUpdate() call and so forth. I you need an event listener used repeatedly throughout your app, it is necessary to make sure you release the listener at componentWillUnmount, this could be avoided with a listener at root component. I hope you get the idea, avoid using lifecycle unless very necessary. Cheers!',
+                image: 'https://blog.algolia.com/wp-content/uploads/2015/11/React_illo_final_720x400.png',
+              },
         ]
     }
   }

@@ -11,7 +11,7 @@ export default {
         color: 'rgba(26,26,26,.9)',
         fontWeight: 600,
         letterSpacing: '1.2px',
-        fontSize: '2em',
+        fontSize: '1.6em',
         whiteSpace:'pre-wrap',
         lineHeight: '2em',
         fontFamily: 'Raleway',
