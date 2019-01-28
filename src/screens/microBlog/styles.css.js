@@ -4,6 +4,7 @@ export default {
         display: 'flex',
         flex: 1,
         height: '100vh',
+        overflow: 'hidden',
     },
     
 }

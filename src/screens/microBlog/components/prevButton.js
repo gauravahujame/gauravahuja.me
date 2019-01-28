@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default ({ onPress }) => (
-    <a onClick={() => onPress()} style={styles.nextButton} />
+    <a onClick={() => onPress()} style={styles.prevButton} />
 );
 
 const styles = ({
-    nextButton: {
+    prevButton: {
         height: '90px',
         width: '43px',
         opacity: 0.6,
@@ -15,6 +15,6 @@ const styles = ({
         backgroundColor: '#000',
         backgroundImage: `url(https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png)`,
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '-167px 25px'
+        backgroundPosition: '-200px 25px'
     }
 });

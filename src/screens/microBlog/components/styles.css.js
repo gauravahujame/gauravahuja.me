@@ -13,7 +13,7 @@ export default {
         letterSpacing: '1.2px',
         fontSize: '1.6em',
         whiteSpace:'pre-wrap',
-        lineHeight: '2em',
+        lineHeight: '1.6em',
         fontFamily: 'Raleway',
     },
     entryDate: {
