@@ -1,9 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import BlogPost from './components/blogPost';
 import styles from './styles.css.js';
 import NextButton from './components/nextButton.js';
 import PrevButton from './components/prevButton.js';
+import BlogGrid from './components/blogGrid';
 import blogEntries from '../../data/blogEntries';
 
 class MicroBlogScreen extends React.Component {
@@ -14,23 +14,26 @@ class MicroBlogScreen extends React.Component {
     this.state = {
         currentPage: 1,
         itemsPerPage: 2,
+        animType: 'enterRight',
     }
   }
 
   incrementPage() {
     this.setState({
+      animType: 'enterRight',
       currentPage: this.state.currentPage + this.state.itemsPerPage,
     }); 
   }
 
   decrementPage() {
     this.setState({
+      animType: 'enterLeft',
       currentPage: this.state.currentPage - this.state.itemsPerPage,
     });
   }
 
   render() {
-    const { currentPage } = this.state;
+    const { currentPage, animType } = this.state;
     const currentPosts = blogEntries.slice(currentPage - 1, currentPage + 1);
     return (
       <Grid
@@ -41,9 +44,7 @@ class MicroBlogScreen extends React.Component {
           {currentPage > 1 && (
             <PrevButton onPress={() => this.decrementPage()} />
           )}
-            <div style={{ display: 'flex', flex: 1, flexDirection: 'row', justifyContent: 'center', paddingRight: '100px', paddingLeft: '100px' }}>
-              {currentPosts.map(blog => <BlogPost blog={blog} />)}
-            </div>
+            <BlogGrid key={currentPage} posts={currentPosts} animType={animType} />
           {currentPage < blogEntries.length-1 && (
             <NextButton onPress={() => this.incrementPage()} />
           )}
