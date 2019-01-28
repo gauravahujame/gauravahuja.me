@@ -12,12 +12,14 @@ export default class SocialBar extends React.Component {
     }
 
     render() {
+        const { animated = true } = this.props;
+
         const Animated = posed.div({
             hidden: { y: 100 },
             visible: { y: -50, transition: { duration: 1000, ease: 'backOut' } },
         });
         return (
-            <Animated initialPose="hidden" pose="visible">
+            <Animated initialPose={animated && "hidden"} pose={animated && "visible"}>
                 <div style={{ padding: '40px', flexDirection: 'row', display: 'flex' }}>
                     <SocialIcon type="facebook" link="https://www.facebook.com/gauravahujame" />
                     <SocialIcon type="linkedin" link="https://www.linkedin.com/in/gauravahujame" />
